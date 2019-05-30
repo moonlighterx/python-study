@@ -88,3 +88,36 @@ bin(4 >> 1)
 
 - Negative numbers are represented in binary with a leading `1`.
 - Positive numbers start with `0` in binary
+
+## Steps to Convert Decimal to Binary
+
+If you don't have a calculator to hand, you can easily convert a decimal number to binary using the remainder method. This involves dividing the number by 2 recursively until you're left with 0, while taking note of each remainder.
+
+- Write down the decimal number.
+- Divide the number by 2.
+- Write the result underneath.
+- Write the remainder on the right hand side. This will be 0 or 1.
+- Divide the result of the division by 2 and again write down the remainder.
+- Continue dividing and writing down remainders until the result of the division is 0.
+- The most significant bit (MSB) is at the bottom of the column of remainders and the least significant bit (LSB) is at the top.
+- Read the series of 1s and 0s on the right from the bottom up. This is the binary equivalent of the decimal number.
+
+### Example
+
+```
+Convert decimal 100 to binary.
+
+100/2 = 50
+Remainder = 0 (LSB)
+50/2 = 25
+Remainder = 0
+25/2 = 12 remainder 1
+12/2 = 6, r0
+6/2 = 3, r0
+3/2 = 1, r1
+1/2 = 0, r1 (MSB)
+=======
+1100100
+
+Check bin('1100100') = 100
+```
