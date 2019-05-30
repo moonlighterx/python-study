@@ -121,3 +121,6 @@ Remainder = 0
 
 Check bin('1100100') = 100
 ```
+
+Source: Owlcation
+<https://owlcation.com/stem/How-to-Convert-Decimal-to-Binary-and-Binary-to-Decimal>
