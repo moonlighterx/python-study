@@ -31,7 +31,8 @@ x | y
 
 ```python
 x^y
-'''Each bit of the output is the same as the corresponding bit in x if that bit in y is 0.
+'''Each bit of the output is the same as the corresponding
+bit in x if that bit in y is 0.
 It's the complement of the bit in x if that bit in y is 1.
 '''
 # Examples
@@ -45,9 +46,13 @@ It's the complement of the bit in x if that bit in y is 1.
 
 ```python
 x << y
-'''Returns x with the bits shifted to the left by y places (and new bits on the right-hand-side are zeros). This is the same as multiplying x by 2**y. '''
+'''Returns x with the bits shifted to the left by y places
+(and new bits on the right-hand-side are zeros).
+This is the same as multiplying x by 2**y. '''
 
-'''You can use the bin function of Python to convert a bitwise operation to binary numbers to see the bits shifted to left or right, for more clarity'''
+'''You can use the bin function of Python to convert a bitwise
+operation to binary numbers to see the bits shifted to left or
+right, for more clarity'''
 
 bin(1 << 0)
 # '0b1' - shift by 0 bits to left, 1 is the current binary number
